@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  padding: 10px;
+}
+
+main {
+  padding: 100px 20px 20px;
+}
+
+.alert {
+  padding: 17px;
+}
+
+.suggestion {
+  padding: 15px;
+}
+
+footer {
+  padding: 15px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+
+.slide-in {
+  animation: slide-in 0.2s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.2s forwards;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 10px 30px;
+  }
+
+  .alert {
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .suggestion {
+    padding: 24px;
+  }
+}
